@@ -7,7 +7,8 @@ public class FishSpawner : MonoBehaviour
     public GameObject SmolGameObject;
     public GameObject MedGameObject;
     public GameObject BeegGameObject;
-
+    public float FishSpawnTimeNow;
+    public float FishSpawnTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,17 @@ public class FishSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (FishSpawnTimeNow <= 0)
+        {
+            spawnDem();
+            //when fish spawn, reset timer to spawn again
+            FishSpawnTimeNow = FishSpawnTime;
+        }
+        else
+        {
+            //count down time by 1 sec
+            FishSpawnTimeNow -= Time.deltaTime;
+        }
     }
     public void spawnDem()
     {
