@@ -42,3 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Boat
+    uniqueID: 1439126153
+    locked: 0
