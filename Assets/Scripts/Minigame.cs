@@ -12,11 +12,20 @@ public class Minigame : MonoBehaviour
     private void Start()
     {
         transform.position = new Vector3(0, 0, 0);
+        StartCoroutine(SetToFalse());
     }
+
+    IEnumerator SetToFalse()
+    {
+        yield return new WaitForSeconds(5);
+        MinigameMode = false;
+        Debug.Log("set to false");
+    }
+
     // Update is called once per frame
     void Update()
     {
-        while (MinigameMode == true)
+        if (MinigameMode == true)
         {
             if (BubbleTimerNow <= 0)
             {
@@ -28,10 +37,7 @@ public class Minigame : MonoBehaviour
             {
                 BubbleTimerNow -= Time.deltaTime;
             }
-
         }
-        
-
     }
 
     void Bubblespawn()
