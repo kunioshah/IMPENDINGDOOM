@@ -231,7 +231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &205792808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80a61a1ff69964d129904836674ec13b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupAllowed: 0
+  pickupAllowed: 1
 --- !u!212 &205792809
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -859,7 +859,7 @@ Transform:
   - {fileID: 1055780610}
   - {fileID: 2073246912}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449711654
 GameObject:
@@ -1169,7 +1169,7 @@ Transform:
   m_LocalScale: {x: 12.795675, y: 4.8666744, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070294800
 GameObject:
