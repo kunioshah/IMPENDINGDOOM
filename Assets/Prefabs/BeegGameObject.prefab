@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 5941741340618764934}
   - component: {fileID: -4445156722538521384}
   - component: {fileID: 94916194451538382}
+  - component: {fileID: -2300653906662707889}
   m_Layer: 0
   m_Name: BeegGameObject
   m_TagString: Fish
@@ -149,3 +150,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3
+--- !u!114 &-2300653906662707889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5941741340618765049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a61a1ff69964d129904836674ec13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupAllowed: 0
