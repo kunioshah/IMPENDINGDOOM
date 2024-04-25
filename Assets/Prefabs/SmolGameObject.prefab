@@ -64,7 +64,7 @@ CircleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -82,6 +82,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupAllowed: 0
+  Bubble: {fileID: 4358191727557318916, guid: 22b324c19e1154172aabbe1888295137, type: 3}
+  bubbleDeathAmount: 3
+  fishType: Small
+  myManager: {fileID: 6675642879671539109, guid: b7ccbc783591f497280cc3f1cbd3ed7b,
+    type: 3}
 --- !u!1 &8913001850817034460
 GameObject:
   m_ObjectHideFlags: 0

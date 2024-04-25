@@ -40,7 +40,6 @@ public class FishSpawner : MonoBehaviour
     }
     public void spawnDem()
     {
-        //Make array for feesh
         GameObject[] fishSize = new GameObject[]{ SmolGameObject, SmolGameObject, SmolGameObject, SmolGameObject, 
             SmolGameObject, MedGameObject, MedGameObject, MedGameObject, BeegGameObject, BeegGameObject};
         //Now we choose random feesh
@@ -51,7 +50,7 @@ public class FishSpawner : MonoBehaviour
         //public bool OverlapPoint(randoSpawn);
         //do
         {
-            randoSpawn = new (Random.Range(-103, 106), Random.Range(49, -49));
+            //randoSpawn = new (Random.Range(-103, 106), Random.Range(49, -49));
         } //while (OverlapPoint(randoSpawn));
 
         //Spawn the feesh

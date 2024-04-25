@@ -163,3 +163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupAllowed: 0
+  Bubble: {fileID: 4358191727557318916, guid: 22b324c19e1154172aabbe1888295137, type: 3}
+  bubbleDeathAmount: 3
+  fishType: Big
+  myManager: {fileID: 6675642879671539109, guid: b7ccbc783591f497280cc3f1cbd3ed7b,
+    type: 3}
