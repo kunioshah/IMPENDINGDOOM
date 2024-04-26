@@ -8,7 +8,7 @@ public class FishSpawner : MonoBehaviour
     public GameObject SmolGameObject;
     public GameObject MedGameObject;
     public GameObject BeegGameObject;
-  
+
     public float FishSpawnTimeNow;
     public float FishSpawnTime;
     public float numberOfFish;
@@ -16,7 +16,7 @@ public class FishSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -36,11 +36,11 @@ public class FishSpawner : MonoBehaviour
                 FishSpawnTimeNow -= Time.deltaTime;
             }
         }
-       
+
     }
     public void spawnDem()
     {
-        GameObject[] fishSize = new GameObject[]{ SmolGameObject, SmolGameObject, SmolGameObject, SmolGameObject, 
+        GameObject[] fishSize = new GameObject[]{ SmolGameObject, SmolGameObject, SmolGameObject, SmolGameObject,
             SmolGameObject, MedGameObject, MedGameObject, MedGameObject, BeegGameObject, BeegGameObject};
         //Now we choose random feesh
         int chosenOne = Random.Range(0, fishSize.Length);
