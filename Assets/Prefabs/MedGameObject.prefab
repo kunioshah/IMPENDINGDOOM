@@ -166,5 +166,6 @@ MonoBehaviour:
   Bubble: {fileID: 4358191727557318916, guid: 22b324c19e1154172aabbe1888295137, type: 3}
   bubbleDeathAmount: 3
   fishType: Medium
+  myInv: {fileID: 1219125520571928814, guid: 5447fcb293a1145d2b4c48b975df3d4a, type: 3}
   myManager: {fileID: 6675642879671539109, guid: b7ccbc783591f497280cc3f1cbd3ed7b,
     type: 3}

@@ -9,42 +9,43 @@ public class FishAttri : MonoBehaviour
     public GameObject beegFish;
     public GameObject smolFish;
     public GameObject medFish;
+    public List<int> fishList;
+    public int Totalmoney;
 
-
-    // Start is called before the first frame update
-    void Start()
+    public void attributePicker(int number)
     {
-        attributePicker();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    public void attributePicker()
-    {
-        int[] fishArray = new int[] { };
-        if (beegFish)
+        if (number == 3) //if the set thing is big
         {
             int[] fishValue = new int[] { 40, 50, 70, 10, 25, 60, 80, 50 };
             int selfValue = fishValue[7];
+            fishList.Add(selfValue);
             Debug.Log(selfValue);
         }
-        if (smolFish)
+        if (number ==2) //medium
         {
             int[] fishValue = new int[] { 40, 50, 70, 10, 25, 60, 80, 50 };
-            int selfValue = fishValue[Random.Range(0, 2)];
+            int selfValue = fishValue[UnityEngine.Random.Range(3, 6)];
+            fishList.Add(selfValue);
             Debug.Log(selfValue);
         }
-        if (medFish)
+        if (number == 1) //Small
         {
             int[] fishValue = new int[] { 40, 50, 70, 10, 25, 60, 80, 50 };
-            string selfValue = fishValue[Random.Range(3, 6)];
+            int selfValue = fishValue[UnityEngine.Random.Range(0, 2)];
+            fishList.Add(selfValue);
             Debug.Log(selfValue);
         }
 
+
     }
-    public GameObject[] fishCaught = new GameObject[] { };
+   
+    public void CashOut()
+    {
+        foreach (int fish in fishList)
+        {
+            Totalmoney = Totalmoney + fish;
+        }
+        Debug.Log(Totalmoney);
+    }
 
 }

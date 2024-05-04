@@ -32,9 +32,17 @@ public class Fish : MonoBehaviour
         if ((myManager.bubCount == bubbleDeathAmount) & (onDeathRow)) {
             if (fishType == "Big")
             {
-                myInv.fishCaught.Add(myInv.beegFish);
+                //set thing to big, then run attribute
+                myInv.attributePicker(3);
+            } else if (fishType == "Medium")
+            {
+                myInv.attributePicker(2);
+            } else if (fishType == "Small")
+            {
+                myInv.attributePicker(1);
             }
             Destroy(gameObject);
+            onDeathRow = false;
         }
     }
 
