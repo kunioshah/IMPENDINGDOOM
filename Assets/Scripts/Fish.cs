@@ -13,6 +13,7 @@ public class Fish : MonoBehaviour
     public int bubbleDeathAmount;
     private bool onDeathRow;
     public String fishType;
+    public FishAttri myInv;
 
     public BubbleManager myManager;
 
@@ -29,6 +30,10 @@ public class Fish : MonoBehaviour
         }
 
         if ((myManager.bubCount == bubbleDeathAmount) & (onDeathRow)) {
+            if (fishType == "Big")
+            {
+                myInv.fishCaught.Add(myInv.beegFish);
+            }
             Destroy(gameObject);
         }
     }

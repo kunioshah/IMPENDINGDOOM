@@ -1417,6 +1417,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2578204982395179377}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1060129265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1060129267}
+  - component: {fileID: 1060129266}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1060129266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060129265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b53da2916c06ac94bb9da5bb83ab29ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beegFish: {fileID: 5941741340458389063}
+  smolFish: {fileID: 5113984662906476387}
+  medFish: {fileID: 2578204982395179378}
+--- !u!4 &1060129267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060129265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.490998, y: -0.24741644, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1133751715
 GameObject:
   m_ObjectHideFlags: 0
@@ -3434,19 +3480,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2578204982395179382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2578204982395179378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 650d372a656cc1148a9737c27c4d281c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  medFish: {fileID: 2578204982395179378}
 --- !u!1001 &5113984662906476386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3634,19 +3667,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5113984662906476393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5113984662906476387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ce89726f98ffe14b826e6187e29a98c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smolFish: {fileID: 5113984662906476387}
 --- !u!1001 &5941741340458389062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3819,16 +3839,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5941741340458389069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5941741340458389063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f828d1bcdc0e7ee4183c3f9228374722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beegFish: {fileID: 5941741340458389063}

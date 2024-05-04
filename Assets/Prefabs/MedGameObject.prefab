@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: -5242124112196283316}
   - component: {fileID: 2419045385275787057}
   - component: {fileID: -7341380317428087588}
-  - component: {fileID: 3924636513334686864}
   m_Layer: 0
   m_Name: MedGameObject
   m_TagString: Fish
@@ -169,16 +168,3 @@ MonoBehaviour:
   fishType: Medium
   myManager: {fileID: 6675642879671539109, guid: b7ccbc783591f497280cc3f1cbd3ed7b,
     type: 3}
---- !u!114 &3924636513334686864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2578204983289937520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 650d372a656cc1148a9737c27c4d281c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  medFish: {fileID: 2578204983289937520}

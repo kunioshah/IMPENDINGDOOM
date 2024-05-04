@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: -4445156722538521384}
   - component: {fileID: 94916194451538382}
   - component: {fileID: -2300653906662707889}
-  - component: {fileID: 2727229000755449277}
   m_Layer: 0
   m_Name: BeegGameObject
   m_TagString: Fish
@@ -169,16 +168,3 @@ MonoBehaviour:
   fishType: Big
   myManager: {fileID: 6675642879671539109, guid: b7ccbc783591f497280cc3f1cbd3ed7b,
     type: 3}
---- !u!114 &2727229000755449277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5941741340618765049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f828d1bcdc0e7ee4183c3f9228374722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beegFish: {fileID: 5941741340618765049}
