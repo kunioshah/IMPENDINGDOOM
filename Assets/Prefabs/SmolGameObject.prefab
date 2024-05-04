@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -8475719169808817394}
   - component: {fileID: 2947263120719971686}
   - component: {fileID: -1281197456770778899}
+  - component: {fileID: 4352835408486690589}
   m_Layer: 0
   m_Name: SmolGameObject
   m_TagString: Fish
@@ -87,6 +88,19 @@ MonoBehaviour:
   fishType: Small
   myManager: {fileID: 6675642879671539109, guid: b7ccbc783591f497280cc3f1cbd3ed7b,
     type: 3}
+--- !u!114 &4352835408486690589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5113984663408684740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce89726f98ffe14b826e6187e29a98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smolFish: {fileID: 5113984663408684740}
 --- !u!1 &8913001850817034460
 GameObject:
   m_ObjectHideFlags: 0
