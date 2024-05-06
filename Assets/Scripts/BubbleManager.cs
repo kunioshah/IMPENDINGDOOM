@@ -9,4 +9,6 @@ public class BubbleManager : MonoBehaviour
     public int maxBubbles;
 
     public float shrinkDuration;
+
+    public bool fishSentencing;
 }

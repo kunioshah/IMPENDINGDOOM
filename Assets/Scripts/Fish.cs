@@ -17,22 +17,25 @@ public class Fish : MonoBehaviour
 
     public BubbleManager myManager;
 
+    public AudioSource audioSource;
+    public AudioClip clip;
+
     void Start()
     {
-        
+        myInv.fishList.Clear();
     }
 
     void Update()
     {
-        if (pickupAllowed && Input.GetKeyDown(KeyCode.Space))
+        if (pickupAllowed && Input.GetKeyDown(KeyCode.Space) && !onDeathRow)
         {
+            audioSource.PlayOneShot(clip, 0.5f);
             pickUp();
         }
 
         if ((myManager.bubCount == bubbleDeathAmount) & (onDeathRow)) {
             if (fishType == "Big")
             {
-                //set thing to big, then run attribute
                 myInv.attributePicker(3);
             } else if (fishType == "Medium")
             {
@@ -43,6 +46,10 @@ public class Fish : MonoBehaviour
             }
             Destroy(gameObject);
             onDeathRow = false;
+        }
+
+        if (!myManager.fishSentencing && onDeathRow) {
+            Destroy(gameObject);
         }
     }
 
@@ -69,16 +76,9 @@ public class Fish : MonoBehaviour
     private void pickUp()
     {
         myManager.bubCount = 0;
-        if (fishType == "Big") {
-            myManager.maxBubbles = 7;
-            myManager.shrinkDuration = 1;
-        } else if (fishType == "Medium") {
-            myManager.maxBubbles = 5;
-            myManager.shrinkDuration = 3;
-        } else if (fishType == "Small") {
-            myManager.maxBubbles = 3;
-            myManager.shrinkDuration = 5;
-        }
+        myManager.maxBubbles = 3;
+        myManager.shrinkDuration = 3;
+        myManager.fishSentencing = true;
 
         spawnBubble();
         onDeathRow = true;

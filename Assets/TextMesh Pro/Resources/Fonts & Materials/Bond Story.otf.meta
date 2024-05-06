@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 204ba4132f648462597ae0e800143c1f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bond Story
+  fontNames:
+  - Bond Story
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0e9cb2a034db347e9876aaea82a03d33, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

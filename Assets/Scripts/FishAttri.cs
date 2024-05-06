@@ -41,6 +41,7 @@ public class FishAttri : MonoBehaviour
    
     public void CashOut()
     {
+        Totalmoney = 0;
         foreach (int fish in fishList)
         {
             Totalmoney = Totalmoney + fish;

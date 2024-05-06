@@ -11,6 +11,9 @@ public class Bubble : MonoBehaviour
     public int maxBubbles;
     public Fish myFish;
 
+    public AudioSource audioSource;
+    public AudioClip clip;
+
     public void Update()
     {
         StartCoroutine(ScaleOverTime(durationTime, shrinkScale));
@@ -41,15 +44,19 @@ public class Bubble : MonoBehaviour
     public void Destroy()
     {
         myManager.bubCount++;
-        DestroySpawn();
-    }
-
-    public void DestroySpawn() {
+        audioSource.PlayOneShot(clip, 0.5f);
         Destroy(gameObject);
         if (myManager.bubCount < maxBubbles)
         {
             myFish.spawnBubble();
         }
+    }
+
+    public void DestroySpawn() {
+        myManager.fishSentencing = false;
+        audioSource.PlayOneShot(clip, 0.5f);
+        Destroy(gameObject);
+        
     }
 
 }
