@@ -15,7 +15,7 @@ public class Scoring : MonoBehaviour
     void Start()
     {
         myInv.CashOut();
-        Score = ("$" + myInv.Totalmoney);
+        Score = ("$" + (myInv.Totalmoney));
         Moneytext.SetText(Score);
     }
 
