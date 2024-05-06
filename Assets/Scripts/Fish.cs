@@ -77,7 +77,7 @@ public class Fish : MonoBehaviour
     {
         myManager.bubCount = 0;
         myManager.maxBubbles = 3;
-        myManager.shrinkDuration = 3;
+        myManager.shrinkDuration = 4;
         myManager.fishSentencing = true;
 
         spawnBubble();

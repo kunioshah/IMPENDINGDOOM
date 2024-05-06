@@ -16,21 +16,35 @@ public class DexOpen : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        dexButton.onClick.AddListener(taskOnClick);
+    //void Update()
+    //{
+    //    dexButton.onClick.AddListener(taskOnClick);
+    //}
+
+    //private void taskOnClick ()
+    //{
+    //    print("clicked");
+    //    if (isDexOpen == false)
+    //    {
+    //        dexCanvas.SetActive(true);
+    //        isDexOpen = true;
+    //        print("dex is open");
+    //    }
+    //    else
+    //    {
+    //        dexCanvas.SetActive(false);
+    //        isDexOpen = false;
+    //        print("dex is closed");
+    //    }
+    //}
+    public void setDexActive() {
+        dexCanvas.SetActive(true);
     }
-private void taskOnClick ()
+
+    public void setDexClosed()
     {
-        if (isDexOpen == false)
-        {
-            dexCanvas.SetActive(true);
-            isDexOpen = true;
-        }
-        else
-        {
-            dexCanvas.SetActive(false);
-            isDexOpen = false;
-        }
+        dexCanvas.SetActive(false);
     }
+
+
 }

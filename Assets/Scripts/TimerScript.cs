@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 public class TimerScript : MonoBehaviour
 {
 
-    Image timerBar;
+    public Image timerBar;
     public float time = 5f;
     float timeLeft;
     
     // Start is called before the first frame update
     void Start()
     {
-        timerBar = GetComponent<Image> ();
+        //timerBar = GetComponent<Image> ();
         timeLeft = time;
     }
 
@@ -23,7 +23,7 @@ public class TimerScript : MonoBehaviour
     {
         if (timeLeft > 0) {
             timeLeft -= Time.deltaTime;
-            timerBar.fillAmount = timeLeft / time;
+            timerBar.fillAmount = Mathf.Clamp01(timeLeft / time);
         }
         else {
             SceneManager.LoadScene(2);
