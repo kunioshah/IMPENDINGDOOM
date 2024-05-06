@@ -22,7 +22,7 @@ public class Fish : MonoBehaviour
 
     void Start()
     {
-        myInv.fishList.Clear();
+        
     }
 
     void Update()

@@ -11,9 +11,11 @@ public class FishAttri : MonoBehaviour
     public GameObject medFish;
     public List<int> fishList;
     public int Totalmoney;
+    public int currentScore;
 
     public void attributePicker(int number)
     {
+        print("attribut pickin");
         if (number == 3) //if the set thing is big
         {
             int[] fishValue = new int[] { 40, 50, 70, 10, 25, 60, 80, 50 };
@@ -35,18 +37,29 @@ public class FishAttri : MonoBehaviour
             fishList.Add(selfValue);
             Debug.Log(selfValue);
         }
-
+        
 
     }
    
     public void CashOut()
     {
         Totalmoney = 0;
+        
         foreach (int fish in fishList)
         {
+            print("this fish costs " + fish);
             Totalmoney = Totalmoney + fish;
         }
-        Debug.Log(Totalmoney);
+        print("total money is " + Totalmoney);
+
+        if (Totalmoney > currentScore)
+        {
+            currentScore = Totalmoney;
+        }
+    }
+
+    public void clearList() {
+        fishList.Clear();
     }
 
 }

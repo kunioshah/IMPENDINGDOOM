@@ -2428,6 +2428,7 @@ MonoBehaviour:
   FishSpawnTimeNow: 0
   FishSpawnTime: 2
   numberOfFish: 40
+  myInv: {fileID: 1219125520571928814, guid: 5447fcb293a1145d2b4c48b975df3d4a, type: 3}
 --- !u!4 &1421113760
 Transform:
   m_ObjectHideFlags: 0

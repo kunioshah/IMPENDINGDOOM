@@ -12,11 +12,13 @@ public class FishSpawner : MonoBehaviour
     public float FishSpawnTimeNow;
     public float FishSpawnTime;
     public float numberOfFish;
+    public FishAttri myInv;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+      //  myInv.clearList();
     }
 
     // Update is called once per frame
@@ -57,8 +59,8 @@ public class FishSpawner : MonoBehaviour
         Instantiate(fishSize[chosenOne], randoSpawn, Quaternion.identity);
 
         //Oh yeah also talk about which one it chose
-        Debug.Log(chosenOne);
+      //  Debug.Log(chosenOne);
         //Maybe where it is, too
-        Debug.Log(randoSpawn);
+      //  Debug.Log(randoSpawn);
     }
 }
